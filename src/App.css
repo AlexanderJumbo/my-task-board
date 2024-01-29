@@ -148,14 +148,12 @@ img.image-type-task {
 .image-status.completed {
   background: #32d657;
 }
-
 .image-status.no-maked {
   background: #dd524c;
 }
 .image-status.add-new {
   background: #e9a23b;
 }
-
 .description-task {
   margin-left: 55px;
   width: 70%;
@@ -164,7 +162,6 @@ img.image-type-task {
 }
 
 /* * MODAL */
-
 .container-modal {
   position: fixed;
   right: 100px;
@@ -181,12 +178,10 @@ img.image-type-task {
   flex-flow: column;
   justify-content: space-around;
 }
-
 .header-modal {
   display: flex;
   justify-content: space-between;
 }
-
 .image-close-modal {
   width: 30px;
   height: 30px;
@@ -197,13 +192,11 @@ img.image-type-task {
   align-items: center;
   border-radius: 8px;
 }
-
 .form-modal {
   display: flex;
   flex-flow: column wrap;
   gap: 10px;
 }
-
 input[type="text"] {
   width: 100%;
   height: 40px;
@@ -215,7 +208,6 @@ input[type="text"] {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 600;
 }
-
 input[type="text"]:focus {
   outline: 2px solid #3662e3;
 }
@@ -230,30 +222,25 @@ textarea {
   font-weight: 600;
   box-sizing: border-box;
 }
-
 textarea:focus {
   outline: 2px solid #3662e3;
 }
-
 label {
   font-size: 12px;
   color: #97a3b6;
   font-weight: 400;
 }
-
 section {
   display: flex;
   flex-flow: row wrap;
   gap: 10px;
 }
-
 .wrapper-radios {
   width: 100%;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
 }
-
 .container-radio-status {
   width: 48%; /* 345px */
   height: 45px;
@@ -266,24 +253,20 @@ section {
   outline: 1px solid #cdd5e0;
   border: none;
 }
-
 .container-radio-status:hover {
   outline: 2px solid #3662e3;
 }
-
 .container-modal-status {
   display: flex;
   align-items: center;
   gap: 10px;
 }
-
 .container-modal-status > label {
   font-family: "Outfit", sans-serif;
   font-size: 13px;
   font-weight: 700;
   color: initial;
 }
-
 .container-img-status {
   display: flex;
   align-items: center;
@@ -292,7 +275,6 @@ section {
   height: 40px;
   border-radius: 10px;
 }
-
 .container-img-status.in-progress {
   background: #e9a23b;
 }
@@ -302,13 +284,11 @@ section {
 .container-img-status.no-maked {
   background: #dd524c;
 }
-
 .img-status-modal {
   border-radius: 10px;
   width: 20px;
   height: 20px;
 }
-
 .img-status-modal.in-progress {
   background: #e9a23b;
 }
@@ -318,7 +298,6 @@ section {
 .img-status-modal.no-maked {
   background: #dd524c;
 }
-
 footer {
   height: 100px;
   display: flex;
@@ -326,7 +305,6 @@ footer {
   align-items: end;
   gap: 15px;
 }
-
 .button-modal {
   width: 85px;
   height: 30px;
@@ -338,7 +316,6 @@ footer {
   gap: 5px;
   cursor: pointer;
 }
-
 .button-modal.delete {
   background: #97a3b6;
   outline: 1px solid #97a3b6;
@@ -351,19 +328,16 @@ footer {
 }
 
 /* *RESPONSIVE DESIGN */
-@media /* (min-width: 700px) and */(max-width: 1200px) {
+@media (max-width: 1200px) {
   .header-container > span > h1 {
     font-size: 1.8rem;
   }
-
   .board-detail-1 {
     width: 70%;
   }
-
   .board-detail-2 {
     width: 45px;
   }
-
   .board-detail-1 > span {
     font-size: 1.25rem;
   }
@@ -373,7 +347,6 @@ footer {
   .task {
     width: 100%;
   }
-
   /* * MODAL */
   .container-modal {
     width: 50%;
@@ -384,9 +357,6 @@ footer {
 }
 
 @media (max-width: 700px) {
-  main {
-    background: #32d657;
-  }
   .header-container {
     width: 90%;
   }
@@ -405,9 +375,7 @@ footer {
   .task {
     width: 100%;
   }
-
   /* * MODAL */
-
   .container-modal {
     top: 10;
     right: 0;
@@ -416,21 +384,18 @@ footer {
     width: 90%;
     margin: 0 auto;
   }
-
   .container-radio-status {
     width: 48%;
   }
-
   footer {
     height: auto;
   }
 }
 
-@media /* (min-width: 300px) and */(max-width: 475px) {
+@media (max-width: 475px) {
   .task {
     gap: 8px;
   }
-
   .board-detail-1 {
     width: 70%;
   }
@@ -441,12 +406,10 @@ footer {
     font-size: 15px;
     text-wrap: pretty;
   }
-
   .wrapper-radios {
     display: flex;
     flex-flow: column wrap;
   }
-
   .container-radio-status {
     width: 100%;
   }
@@ -465,7 +428,6 @@ footer {
     text-align: center;
     text-wrap: balance;
   }
-
   .task {
     gap: 8px;
   }
