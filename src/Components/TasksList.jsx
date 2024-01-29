@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import add from '../assets/add_round_duotone.svg'
 
-// import data from '../mocks/tasks.json'
 import { Modal } from './Modal'
 import { Board } from './board'
 import { useTasks } from '../hooks/useTasks'
@@ -9,12 +8,7 @@ import { useTasks } from '../hooks/useTasks'
 export function TasksLists () {
   const [open, setOpen] = useState(false)
   const [task, setTask] = useState(null)
-  console.log('🚀 ~ TasksLists ~ task:', task)
   const { tasks, setUpdate } = useTasks()
-  // const [tasks, setTasks] = useState([])
-  console.log(tasks)
-  // console.log(open)
-  // console.log(data)
 
   const handleOpen = () => {
     setOpen(!open)
