@@ -5,16 +5,12 @@ import todo from '../assets/todo.png'
 import clockStatus from '../assets/time_atack_duotone.svg'
 import doneRound from '../assets/done_round_duotone.svg'
 import close from '../assets/close_ring_duotone.svg'
-// import { useState } from 'react'
 
 export function Board ({ props, setOpen, setTask }) {
-  // const [task, setTask] = useState(null) // ['todo', 'in-progress', 'completed']
   const editTask = (event) => {
-    console.log('event', event.target.id)
     setOpen(true)
     setTask(event.target.id)
   }
-  console.log('🚀 ~ editTask ~ props.id:', props.id)
   return (
     <>
       {
@@ -75,16 +71,6 @@ export function Board ({ props, setOpen, setTask }) {
             )
           : ''
       }
-
-      {/* <div className='task add-new'>
-        <div className='board-detail-1 add-new'>
-          <span>Add new task</span>
-          <div className='board-detail-2 add-new'>
-            <img className='image-status add-new' src={add} alt='' />
-          </div>
-        </div>
-      </div> */}
-
     </>
   )
 }
