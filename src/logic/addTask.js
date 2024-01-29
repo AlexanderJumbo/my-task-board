@@ -18,7 +18,6 @@ export async function addTask ({ fields, setOpen, setUpdate }) {
     setOpen(false)
     setUpdate(true)
   } catch (error) {
-    console.log(error)
     setOpen(false)
   } finally {
     setOpen(false)
