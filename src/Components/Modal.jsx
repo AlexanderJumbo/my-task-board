@@ -3,11 +3,9 @@ import closeIcon from '../assets/close_ring_duotone-1.svg'
 import clockStatus from '../assets/time_atack_duotone.svg'
 import doneRound from '../assets/done_round_duotone.svg'
 import close from '../assets/close_ring_duotone.svg'
-// import check from '../assets/check.png'
 import trash from '../assets/trash.svg'
 import check from '../assets/done_round.svg'
 
-// import data from '../mocks/tasks.json'
 import { useTask } from '../hooks/useTask'
 import { addTask } from '../logic/addTask'
 import { editTask } from '../logic/editTask'
@@ -25,7 +23,6 @@ export function Modal ({ setOpen, task, setUpdate }) {
   const handleSubmit = async (event) => {
     event.preventDefault()
     const fields = Object.fromEntries(new window.FormData(event.target))
-    console.log(fields)
 
     if (task === null) {
       await addTask({ fields, setOpen, setUpdate })
@@ -47,7 +44,7 @@ export function Modal ({ setOpen, task, setUpdate }) {
     <>
       <div className='container-modal'>
         <header className='header-modal'>
-          <h1> {task ? 'Task details' : 'New Task details'} {/* {task} */}</h1>
+          <h1> {task ? 'Task details' : 'New Task details'}</h1>
           <div className='image-close-modal'> <img onClick={handleClose} src={closeIcon} /></div>
         </header>
         <form action='' className='form-modal' onSubmit={handleSubmit}>
@@ -91,13 +88,8 @@ export function Modal ({ setOpen, task, setUpdate }) {
             </div>
           </section>
           <footer>
-            {/* <div className='buttons-modal'> */}
             <button className='button-modal delete' onClick={handleDelete}>Delete <img src={trash} alt='' /></button>
-            {/* </div> */}
-            {/* <div className='buttons-modal'> */}
-
             <button className='button-modal save'>Save <img src={check} alt='' /></button>
-            {/* </div> */}
           </footer>
         </form>
       </div>
