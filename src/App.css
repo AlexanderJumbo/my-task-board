@@ -63,7 +63,7 @@ main {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
-  width: 70%; /* 552px; */
+  width: 70%;
   height: auto;
   padding: 15px;
   border-radius: 12px;
