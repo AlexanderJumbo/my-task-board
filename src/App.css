@@ -1,13 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400&display=swap");
 
 * {
-  margin: 0;
+  margin-bottom: 0;
   padding: 0;
 }
 
 main {
+  background: red;
   width: 100%;
-  height: 100vh; /* * OJO */
+  height: 100%; /* * OJO */
   display: flex;
   flex-direction: column;
   font-family: "Outfit", sans-serif;
@@ -57,6 +58,7 @@ main {
   flex-direction: column;
   align-self: center;
   gap: 20px;
+  padding: 10px;
 }
 
 .task {
@@ -92,6 +94,7 @@ main {
   display: flex;
   direction: rtl;
   flex: auto;
+  width: 70%;
   justify-content: end;
   align-items: center;
   gap: 15px;
@@ -348,10 +351,41 @@ footer {
 }
 
 /* *RESPONSIVE DESIGN */
+@media /* (min-width: 700px) and */(max-width: 1200px) {
+  .header-container > span > h1 {
+    font-size: 1.8rem;
+  }
+
+  .board-detail-1 {
+    width: 70%;
+  }
+
+  .board-detail-2 {
+    width: 45px;
+  }
+
+  .board-detail-1 > span {
+    font-size: 1.25rem;
+  }
+  .description-task {
+    font-size: 1.1rem;
+  }
+  .task {
+    width: 100%;
+  }
+
+  /* * MODAL */
+  .container-modal {
+    width: 50%;
+  }
+  .container-radio-status {
+    width: 48%;
+  }
+}
 
 @media (max-width: 700px) {
   main {
-    height: 100vh;
+    background: #32d657;
   }
   .header-container {
     width: 90%;
@@ -392,34 +426,22 @@ footer {
   }
 }
 
-@media (min-width: 700px) and (max-width: 1100px) {
-  main {
-    height: 100vh;
-  }
-  .header-container > span > h1 {
-    font-size: 1.8rem;
-  }
-
-  .board-detail-1 > span {
-    font-size: 1.25rem;
-  }
-  .description-task {
-    font-size: 1.1rem;
-  }
+@media /* (min-width: 300px) and */(max-width: 475px) {
   .task {
-    width: 100%;
+    gap: 8px;
   }
 
-  /* * MODAL */
-  .container-modal {
-    width: 50%;
+  .board-detail-1 {
+    width: 70%;
   }
-  .container-radio-status {
-    width: 48%;
+  .board-detail-2 {
+    width: 45px;
   }
-}
+  .board-detail-1 > span {
+    font-size: 15px;
+    text-wrap: pretty;
+  }
 
-@media (max-width: 400px) {
   .wrapper-radios {
     display: flex;
     flex-flow: column wrap;
@@ -427,5 +449,30 @@ footer {
 
   .container-radio-status {
     width: 100%;
+  }
+}
+
+@media (max-width: 300px) {
+  .header-container > span {
+    display: flex;
+    align-items: center;
+  }
+  .header-container > span > h1 {
+    font-size: 20px !important;
+  }
+  .header-container > span > h4 {
+    font-size: 15px !important;
+    text-align: center;
+    text-wrap: balance;
+  }
+
+  .task {
+    gap: 8px;
+  }
+  .board-detail-1 > span {
+    font-size: 12px !important;
+  }
+  .container-radio-status {
+    flex: auto !important;
   }
 }
