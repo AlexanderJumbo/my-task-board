@@ -13,7 +13,6 @@ export async function editTask ({ fields, task, setOpen, setUpdate }) {
     setOpen(false)
     setUpdate(true)
   } catch (error) {
-    console.log(error)
     setOpen(false)
   } finally {
     setOpen(false)
