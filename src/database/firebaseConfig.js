@@ -10,7 +10,7 @@ const firebaseConfig = {
   authDomain: 'Your authDomain',
   projectId: 'Your projectId',
   storageBucket: 'Your storageBucket',
-  messagingSenderId: 'Your messagingSender',
+  messagingSenderId: 'Your messagingSenderId',
   appId: 'Your appId'
 }
 // Initialize Firebase
