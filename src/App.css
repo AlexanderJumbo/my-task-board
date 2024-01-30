@@ -320,6 +320,13 @@ footer {
   outline: 1px solid #97a3b6;
   border: none;
 }
+
+.button-modal.delete.is-active {
+  cursor: not-allowed;
+  background: #bcc5d4;
+  display: none;
+}
+
 .button-modal.save {
   background: #3662e3;
   outline: 1px solid #3662e3;

@@ -16,6 +16,8 @@ export function Modal ({ setOpen, task, setUpdate }) {
   const { taskFetch, status, setStatus } = useTask({ task })
   useKeyboardEvent({ setOpen })
 
+  const isActive = !task
+
   const handleClose = () => {
     setOpen(false)
   }
@@ -23,9 +25,9 @@ export function Modal ({ setOpen, task, setUpdate }) {
   const handleSubmit = async (event) => {
     event.preventDefault()
     const fields = Object.fromEntries(new window.FormData(event.target))
-
+    const inputsEmpty = !fields.task_name || !fields.status
     if (task === null) {
-      await addTask({ fields, setOpen, setUpdate })
+      await addTask({ fields, setOpen, setUpdate, inputsEmpty })
     } else {
       await editTask({ fields, task, setOpen, setUpdate })
     }
@@ -51,7 +53,7 @@ export function Modal ({ setOpen, task, setUpdate }) {
           <label htmlFor='task_name'>
             Task name
           </label>
-          <input placeholder='Learn JavaScript' type='text' autoComplete='off' name='task_name' id='task_name' defaultValue={taskFetch?.name} />
+          <input placeholder='Learn JavaScript' type='text' autoComplete='off' name='task_name' id='task_name' defaultValue={taskFetch?.name} required />
           <label htmlFor='description'>Description</label>
           <textarea placeholder='Enter a short description' name='description' id='description' cols='30' rows='10' defaultValue={taskFetch?.description} />
           <label htmlFor='icons' />
@@ -66,7 +68,7 @@ export function Modal ({ setOpen, task, setUpdate }) {
                 </div>
                 <label htmlFor='in-progress'> In progress</label>
               </div>
-              <input type='radio' name='status' id='in-progress' value='in-progress' checked={status === 'in-progress'} onChange={handleCheck} />
+              <input type='radio' name='status' id='in-progress' value='in-progress' checked={status === 'in-progress'} onChange={handleCheck} required />
             </div>
             <div className='container-radio-status'>
               <div className='container-modal-status'>
@@ -75,7 +77,7 @@ export function Modal ({ setOpen, task, setUpdate }) {
                 </div>
                 <label htmlFor='completed'>Completed</label>
               </div>
-              <input type='radio' name='status' id='completed' value='completed' checked={status === 'completed'} onChange={handleCheck} />
+              <input type='radio' name='status' id='completed' value='completed' checked={status === 'completed'} onChange={handleCheck} required />
             </div>
             <div className='container-radio-status'>
               <div className='container-modal-status'>
@@ -84,11 +86,11 @@ export function Modal ({ setOpen, task, setUpdate }) {
                 </div>
                 <label htmlFor='no-maked'>Won't do</label>
               </div>
-              <input type='radio' name='status' id='no-maked' value='no-maked' checked={status === 'no-maked'} onChange={handleCheck} />
+              <input type='radio' name='status' id='no-maked' value='no-maked' checked={status === 'no-maked'} onChange={handleCheck} required />
             </div>
           </section>
           <footer>
-            <button className='button-modal delete' onClick={handleDelete}>Delete <img src={trash} alt='' /></button>
+            <button className={`button-modal delete ${isActive ? 'is-active' : ''}`} onClick={handleDelete}>Delete <img src={trash} alt='' /></button>
             <button className='button-modal save'>Save <img src={check} alt='' /></button>
           </footer>
         </form>
