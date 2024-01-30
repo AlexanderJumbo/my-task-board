@@ -25,10 +25,10 @@ Las mejoras que se pueden hacer a esta app son:
 
 Sigue los siguientes pasos para ejecutar el proyecto en tu servidor local:
 
-1️. Clona este repositorio en tu máquina.
-2️. Ejecuta npm install o yarn para instalar las dependencias que utiliza este proyecto.
-3️. Ejecuta npm run dev para inicializar el proyecto.
-4️. Por defecto en consola te mostrará un link: http://localhost:5173, abrelo para visualizar la app.
+1. Clona este repositorio en tu máquina.
+2. Ejecuta npm install o yarn para instalar las dependencias que utiliza este proyecto.
+3. Ejecuta npm run dev para inicializar el proyecto.
+4. Por defecto en consola te mostrará un link: http://localhost:5173, abrelo para visualizar la app.
 
 ## 📷 Imágenes
 
