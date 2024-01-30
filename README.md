@@ -8,6 +8,7 @@
 ## 💻 Stack
 
 1. Vite
+2. React
 2️. React
 3️. JSX
 4️. CSS
