@@ -6,7 +6,7 @@
 - Los campos Nombre y Estado son obligatorios.
 
 # 💻 Stack
-1️⃣ Vite
+1️⃣ Vite/n
 2️⃣ React
 3️⃣ JSX
 4️⃣ CSS
