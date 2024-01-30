@@ -6,11 +6,11 @@
 - Los campos Nombre y Estado son obligatorios.
 
 ## 💻 Stack
-.1 Vite /n
-.2️ React
-.3️ JSX
-.4️ CSS
-.5️ Cloud Firestore
+1. Vite /n
+2️. React
+3️. JSX
+4️. CSS
+5️. Cloud Firestore
 
 ## 🤔 Mejoras
 Las mejoras que se pueden hacer a esta app son:
@@ -23,10 +23,10 @@ Las mejoras que se pueden hacer a esta app son:
 ⏯️ Ejecución del proyecto
 Sigue los siguientes pasos para ejecutar el proyecto en tu servidor local:
 
-.1️ Clona este repositorio en tu máquina.
-.2️ Ejecuta npm install o yarn para instalar las dependencias que utiliza este proyecto.
-.3️ Ejecuta npm run dev para inicializar el proyecto.
-.4️ Por defecto en consola te mostrará un link: http://localhost:5173, abrelo para visualizar la app.
+1️. Clona este repositorio en tu máquina.
+2️. Ejecuta npm install o yarn para instalar las dependencias que utiliza este proyecto.
+3️. Ejecuta npm run dev para inicializar el proyecto.
+4️. Por defecto en consola te mostrará un link: http://localhost:5173, abrelo para visualizar la app.
 
 ## 📷 Imágenes
 
