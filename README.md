@@ -3,7 +3,6 @@
 - Permite crear, editar y eliminar tareas.
 - Ordena las tareas de forma cronológicamente automaticamente.
 - Puedes escoger entre 3 estados para asignarselo a la tarea.
-- Los campos Nombre y Estado son obligatorios.
 
 ## 💻 Stack
 
