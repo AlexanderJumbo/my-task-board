@@ -6,6 +6,7 @@
 - Los campos Nombre y Estado son obligatorios.
 
 ## 💻 Stack
+
 1. Vite
 2️. React
 3️. JSX
@@ -21,6 +22,7 @@ Las mejoras que se pueden hacer a esta app son:
 - Tomando en cuenta el punto anterior se puede implementar una funcionalidad que permita compartir las tareas entre grupos de usuarios.
 
 ⏯️ Ejecución del proyecto
+
 Sigue los siguientes pasos para ejecutar el proyecto en tu servidor local:
 
 1️. Clona este repositorio en tu máquina.
