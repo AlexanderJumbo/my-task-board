@@ -8,9 +8,10 @@
 
 1. Vite
 2. React
-3. JSX
-4. CSS
-5. Cloud Firestore
+3. JavaScript
+4. JSX
+5. CSS
+6. Cloud Firestore
 
 ## 🤔 Mejoras
 Las mejoras que se pueden hacer a esta app son:
